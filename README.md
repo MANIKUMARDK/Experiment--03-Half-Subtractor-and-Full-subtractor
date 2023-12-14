@@ -25,31 +25,30 @@ A full subtractor is a combinational circuit that performs subtraction involving
 
 Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
-## Procedure Connect the supply (+5V) to the circuit Switch ON the main switch If the output is 1, then the led glows.
-
-
-
-Write the detailed procedure here 
-
-
+## Procedure
+*Connect the supply (+5V) to the circuit.
+*Switch ON the main switch.
+*If the output is 1, then the led glows.
 ## Program:
-/*Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming
-
-1.Program to design a half adder:
-module ex3(a,b,sum,carry);
+```
+Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+Developed by: MANIKUMAR D.K
+RegisterNumber:  23013588
+1. Program to design a half subtractor:
+module ex4(a,b,diff,borr);
 input a,b;
-output sum,carry;
-assign sum=a^b;
-assign carry=a&b;
+output diff,borr;
+assign diff=(a^b);
+assign borr=((~a)&b);
+endmodule 
+2. Program to design a full subtractor:
+module ex41(a,b,bin,diff,borr);
+input a,b,bin;
+output diff,borr;
+assign diff=a^b^bin;
+assign borr=((~a)&b)|(b&bin)|((~a)&bin);
 endmodule
-
-1.Program to design a full adder:
-module ex31(a,b,cin,sum,carry);
-input a,b,cin;
-output sum,carry;
-assign sum=a^b^cin;
-assign carry=(a&b)|((a^b)&cin);
-endmodule
+```
 Logic symbol & Truthtable
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
 Developed by: MANIKUMAR D.K
@@ -57,19 +56,26 @@ RegisterNumber:  23013588
 
 ## Output:
 
-## TruthtableTRUTH TABLE:HALF ADDER ![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/67416341-220a-4e4d-8539-b592dc965bc2)
-## FULL ADDER ![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/a3c5e0ec-d956-4d29-b2a9-ca421526ec23)
+## TruthtableTRUTH TABLE:HALF ADDER
+![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/67416341-220a-4e4d-8539-b592dc965bc2)
+## FULL ADDER
+![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/a3c5e0ec-d956-4d29-b2a9-ca421526ec23)
 
 
 
 
 
-##  RTL realization  HALF ADDER ![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/79c1423c-64a7-487a-bed0-1384dfcf87ab)
-FULL ADDER ![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/5056a610-7dc3-426c-8b99-53c53031c7ac)
+##  RTL realization 
+## HALF ADDER
+![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/79c1423c-64a7-487a-bed0-1384dfcf87ab)
+## FULL ADDER
+![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/5056a610-7dc3-426c-8b99-53c53031c7ac)
 
 
-## Timing diagram HALF ADDER 
-##![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/253bbc43-9b71-48cf-85d5-973b67dca54d)
-FULL SUBTRACTOR:![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/af082215-cd24-47cf-bf6f-20a314ef7ca4)
+## Timing diagram 
+## HALF ADDER 
+![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/253bbc43-9b71-48cf-85d5-973b67dca54d)
+## FULL SUBTRACTOR
+:![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/af082215-cd24-47cf-bf6f-20a314ef7ca4)
 RESULT :
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
