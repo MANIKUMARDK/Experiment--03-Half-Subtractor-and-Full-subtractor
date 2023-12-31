@@ -77,5 +77,5 @@ RegisterNumber:  23013588
 ![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/253bbc43-9b71-48cf-85d5-973b67dca54d)
 ## FULL SUBTRACTOR
 :![image](https://github.com/MANIKUMARDK/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/147215581/af082215-cd24-47cf-bf6f-20a314ef7ca4)
-RESULT :
+## RESULT :
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
